@@ -4,5 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">Demo</a>.</p>
 </div>
+<form asp-action="index">
+    <label>Nhập mã sinh viên:</label>
+    <input type="text" name="MaSinhVien">
+    <label>Nhập họ tên:</label>
+    <input type="text" name="Fullname">
+    <input type="submit" value="Gửi dữ liệu">
+</form>
+<h1>@ViewBag.Message</h1>
