@@ -1,15 +1,15 @@
 namespace DemoMVC.Controllers;
 
-public class DemoController : Controller
+public class KhachHangController : Controller
 {
     public IActionResult Index()
     {
         return View();
     }
     [HttpPost]
-    public IActionResult Index(Demo dm)
+    public IActionResult Index(KhachHang kh)
     {
-        string strResult = "Hello" + dm.Fullname;
+        string strResult = "Hello" + kh.KhachHangName;
         ViewBag.thongbao = strResult;
         return View();
     }
