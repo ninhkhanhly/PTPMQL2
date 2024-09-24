@@ -9,12 +9,14 @@ namespace NetMVC.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext (DbContextOptions<ApplicationDbContext> options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
 
         public DbSet<NetMVC.Models.Entity.Student> Student { get; set; } = default!;
         public DbSet<NetMVC.Models.Entity.Person> Person { get; set; } = default!;
+        public DbSet<NetMVC.Models.Entity.Employee> Employee { get; set; } = default!;
+
     }
 }
