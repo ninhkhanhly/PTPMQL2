@@ -6,7 +6,7 @@ namespace DemoMVC.Models
         [Key]
         public string EmployeeID { get; set; }
         public string FullName { get; set; }
-        public string Address { get; set; }
+      
 
 
 
