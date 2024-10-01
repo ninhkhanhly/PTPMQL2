@@ -16,5 +16,6 @@ namespace DEMO.Data
 
         public DbSet<DEMO.Models.Student> Student { get; set; } = default!;
         public DbSet<DEMO.Models.Person> Person { get; set; } = default!;
+        public DbSet<DEMO.Models.Employee> Employee { get; set; } = default!;
     }
 }
